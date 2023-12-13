@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ubuntu", sans-serif;
+}
+html{
+    background-color: white;
+}
+body{
+    display: flex;
+    justify-content: left;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0f762;
+    /* border: 1px solid red; */
+   
+}
+.navbar{
+  position: relative;
+  width: 400px;
+  min-width: 200px;
+  max-width: 300px;
+  height: 740px;
+  background: linear-gradient(#207BCF, #1cb5e0, #2a2185,#000046);
+  border-left: 10px solid var(--blue);
+  border-top-right-radius: 40px;
+  transition: 0.5s;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  
+}
+.title{
+    /* border:1px solid red; */
+    margin-top: 2.5rem;
+}
+.title1{
+    display: flex;
+    justify-content: center;
+    color: #A6F6FF;
+    font-size: 1.3rem;
+}
+.title2{
+    display: flex;
+    justify-content: center;
+    color: #D2E0FB;
+}
+.profile{
+    /* border:1px solid red; */
+    height: 200px;
+    width: auto;
+    /* background-color:  rgba(175, 175, 230, 0.774); */
+    background-color:  rgba(175, 221, 230, 0.432);
+    position: relative;
+}
+.profile .profile-img,.galery .foto {
+    background-image: url(/assets/imgs/customer02.jpg);
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    justify-self: center;
+    border: 2px solid white;
+    position: relative;
+    top: 20px;
+
+}
+.nama{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 3px;
+}
+
+.nama,.email{
+    position: relative;
+    top: 20px;
+}
+.profile,.galery,.galery .foto{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.galery{
+    display: flex;
+    padding: 3px;
+    /* border: 1px solid red; */
+    width: auto;
+    height: 50%;
+    margin: 10px;
+    /* background-color:  rgba(175, 175, 230, 0.774); */
+    background-color:  rgba(175, 221, 230, 0.432);
+}
+.galery .media{
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    margin: 3px;
+    color: #2532e7;
+    /* border: 1px solid red; */
+}
+.galery .foto{
+    display: flex;
+    margin: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 65px;
+    height: 65px;
+    background-color: transparent;
+
+
+}
+/* -----------topbar--------- */
+.container2{
+    /* border: 1px solid red; */
+    width: 100%;
+    
+}
+.topbar,.topbar .user,.box,.box .bar, input[type="submit"]{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.topbar{
+    /* border: 1px solid red; */
+    display: flex;
+    position: relative;
+    width: 97%;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 10px;
+    /* margin-right: 1px; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 0px 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 7px 25px rgba(155, 154, 158, 0.362);
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+}
+.topbar .user{
+    /* border: 1px solid red; */
+    background-color: #79a0f640;
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 25%;
+    height: 70%;
+    min-width: 170px;
+    padding: 10px;   
+    box-shadow: 0px 7px 25px rgba(155, 154, 158, 0.362);
+}
+.topbar .user .profile{
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    top: -10px;
+    bottom: 10px;
+    left: auto;
+    right: -15px;
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    background-image: url(/assets/imgs/Czinlju.png);
+}
+.topbar .bidan .name{
+    font-size: 1rem;       
+}
+
+@media screen and (max-width: 400px){
+    .topbar .bidan .name {
+        font-size: 10px center;
+    }
+    
+}
+
+/* -----------Box-Chat--------- */
+.box{
+    /* border: 1px solid red; */
+    /* background-color: #1cb5e0; */
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    position: relative;
+    width: 97%;
+    height: 83%;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #0d6dfd2e;
+    box-shadow: 0px 7px 25px rgba(155, 154, 158, 0.584);
+}
+.box .bar{
+    display: flex;
+    position: relative;
+    background-color: white;
+    /* box-shadow: 0px 7px 25px rgba(155, 154, 158, 0.584); */
+    top: 570px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+    gap: 5px;
+}
+textarea{
+    /* position: relative; */
+    /* background-color: rgb(231, 27, 27); */
+    /* box-shadow: 0px 7px 25px rgba(155, 154, 158, 0.584); */
+    /* top: 540px; */
+    background-color: transparent;
+    border-radius: 30px;
+    margin-top: 8px;
+    width: 100%;
+    height: 35px;
+    resize: none;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.box .bi-telegram{
+    cursor: pointer;
+    font-size: 35px;
+    padding: 0px;
+    position: relative;
+    top: 5px;
+    
+}
+.box .dropdown-toggle{
+    /* border: 1px solid red; */
+    position: relative;
+    font-size: 35px;
+    top: 5px;
+    
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1;
+}

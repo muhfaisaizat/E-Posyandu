@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ubuntu", sans-serif;
+}
+html{
+    background-color: white;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* justify-content: left; */
+}
+/* .container1{
+    display: flex;
+    width: auto;
+    height: 100%;
+    background-color: #e0e0f762;
+ 
+   
+} */
+.navbar1{
+  position: relative;
+  width: 400px;
+  min-width: 200px;
+  max-width: 300px;
+  height: 740px;
+  background: linear-gradient(#207BCF, #1cb5e0, #2a2185,#000046);
+  border-left: 10px solid var(--blue);
+  border-top-right-radius: 40px;
+  transition: 0.5s;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  
+}
+.titleutam{
+    /* border:1px solid red; */
+    margin-top: 2.5rem;
+}
+.title1{
+    display: flex;
+    justify-content: center;
+    color: #A6F6FF;
+    font-size: 1.3rem;
+}
+.title2{
+    display: flex;
+    justify-content: center;
+    color: #D2E0FB;
+}
+.profile{
+    /* border:1px solid red; */
+    height: 200px;
+    width: auto;
+    background-color:  rgba(175, 221, 230, 0.432);
+    position: relative;
+}
+
+.profile2{
+    /* border:1px solid red; */
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    background-color:  rgba(14, 218, 11, 0.432);
+    /* position: relative; */
+}
+.profile .profile-img{
+    /* background-image: url(/assets/imgs/customer02.jpg); */
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    /* display: flex; */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    grid-area: profile;
+    justify-self: center;
+    border: 2px solid white;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+
+}
+.nama{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 3px;
+}
+/* .anonim{
+    display: flex;
+    position: absolute;
+    top: 333px;
+    left: 7%;
+    padding: ;
+    width: auto;
+} */
+.mode{
+    color: white;
+    height: 30px;
+    display: flex;
+    padding: 5px;
+    /* border:1px solid red; */
+    justify-content: space-between;
+    
+}
+.mode .toggle{
+    /* border: 1px solid red; */
+    background-color: rgba(19, 8, 56, 0.742);
+    /* position: absolute; */
+    /* display: flex; */
+    width: 50px;
+    height: 20px;
+    /* margin-left: 77%; */
+    /* margin-right: 4%; */
+    /* margin-top: 0; */
+    /* margin-bottom: 0; */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 0.3s;
+
+}
+.mode .toggle .toggle-button{
+    /* border: 1px solid red; */
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    /* display: flex; */
+    width: 15px;
+    height: 15px;
+    top: 3px;
+    left: 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.mode .toggle.active{
+    background-color: rgb(116, 160, 243);
+}
+.mode .toggle.active .toggle-button{
+    left: 60%;
+    background-color: black;
+}
+.gantinama{
+    color:white;
+    height: 80px;
+    /* border:1px solid red; */
+}
+.bi-pencil{
+    display: flex;
+    position: relative;
+    margin-left: 88%;
+    bottom: 0.8em;
+    cursor: pointer;
+}
+.gantiakun{
+    /* border:1px solid red; */
+    color: white;
+    height: 210px;
+    
+}
+.changepw{
+    /* border:1px solid red; */
+    height: 20px;
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    position: relative;
+    top: 5px;
+}
+.simpan1{
+    /* border:1px solid red; */
+    height: 30px;
+    width: auto;
+    margin-left: 7%;
+    margin-right: 7%;
+    /* background-color:  rgba(165, 232, 255, 0.811); */
+    position: relative;
+    top: -50px;
+    
+}
+.save{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 5px;
+}
+.logout1{
+    /* border:1px solid red; */
+    color: #f0d2c2;
+    height: 25px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -30px;
+}
+.out{
+    position: relative;
+    top: 2.5px;
+}
+.nama,.email{
+    position: relative;
+    top: 20px;
+}
+.logout1,.simpan1,.gantiakun,.gantinama,.mode,.profile{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.gantiakun,.mode,.gantinama,.profile{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.logout1,.gantiakun,.gantinama,.mode{
+    /* background-color:  rgba(140, 140, 200, 0.5); */
+    background-color:  rgba(175, 221, 230, 0.432);
+}
+.logout1,.simpan1{
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+.changename{
+    height: 20px;
+    width: 270px;
+    margin-left: 4%;
+    margin-right: 4%;
+    position: relative;
+    top: 5px;
+    
+}
+.new,.confirm{
+    /* border: 1px solid red; */
+    position: relative;
+    display: flex;
+    top: 10px;
+}
+.new,.confirm,.newpw,.confirmpw{
+    /* border:1px solid red; */
+    height: 20px;
+    width: auto;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    position: relative;
+    display: flex;
+}
+.nw,.cf{
+    position: relative;
+    top: 5px;
+}
+.nwpw,.cfpw{
+    /* border:1px solid red; */
+    /* display: flex; */
+    align-items: center;
+    width: auto;
+    position: relative;
+    /* top: px; */
+    background-color:  rgba(23, 18, 18, 0.5);
+    margin-top: 7px;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+.nwpw input ,.cfpw input{
+    width: 100%;
+    /* padding: 10px 0; */
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    left: 5px;
+    
+}
+.nwpw img,.cfpw img{
+    position:relative;
+    right: 10px;
+    width: 25px;
+    cursor: pointer;
+    
+}
+.nwpw,.cfpw{
+    /* border:1px solid red; */
+    height: 30px;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  rgba(166, 166, 204, 0.5);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 10px;   
+}
+
+/* -----------topbar--------- */
+/* .container2{
+   
+    width: 1220px;
+   
+} */
+.topbar,.topbar .bidan,.box,.box .list,.box .pilih{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* .topbar{ */
+    /* border: 1px solid red; */
+    /* display: flex; */
+    /* position: relative; */
+    /* width: 97%; */
+    /* height: 60px;
+    margin-left: 20px;
+    margin-top: 10px; */
+    /* margin-right: 1px; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* padding: 0px 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 7px 25px rgba(155, 154, 158, 0.362); */
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+/* } */
+.topbar .bidan{
+    /* border: 1px solid red; */
+    background-color: #79a0f640;
+    display: flex;
+    /* justify-content: space-between; */
+    /* position: relative; */
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 25%;
+    height: 70%;
+    min-width: 170px;
+    padding: 10px;   
+    box-shadow: 0px 7px 25px rgba(155, 154, 158, 0.362);
+}
+.topbar .bidan .profile{
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    top: -10px;
+    bottom: 10px;
+    left: auto;
+    right: -15px;
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    /* background-image: url(/assets/imgs/Czinlju.png); */
+}
+.topbar .bidan .name{
+    font-size: 1rem;       
+}
+
+@media screen and (max-width: 400px){
+    .topbar .bidan .name {
+        font-size: 10px center;
+    }
+    
+}
+/* -----------Box-Chat--------- */
+.box{
+    /* border: 1px solid red; */
+    /* background-color: #1cb5e0; */
+    /* display: flex; */
+    /* gap: 10px; */
+    padding-right: 20px;
+    /* position: relative; */
+    width: 97%;
+    /* min-width: 80%; */
+    height: 83%;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #afa9d294;
+    box-shadow: 0px 7px 25px rgba(155, 154, 158, 0.584);
+}
+.box .pilih{
+    /* border: 1px solid red; */
+    /* display: flex; */
+    /* position: absolute; */
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    color: #2a2185;
+
+}
+ 
+.box .list{
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: whitesmoke;
+    /* position: relative; */
+    /* top: 50px; */
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    min-width: 40%;
+    height: 70px;
+    cursor: pointer;
+    gap: 10px;
+}
+.box .profile{
+    width: 39px;
+    height: 39px;
+    margin-left: 5px;
+    margin-top: 6px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    background-image: url(/assets/imgs/customer01.jpg);
+}
+.box .name{
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 5px;
+    font-size: 1.4rem;
+    color: #2a2185;
+}
+.box .name .last-seen{
+    font-size: 15px;
+    color: green;
+}
+/* @media(max-width: 991px){
+    .container2{
+        font-size: 10px;
+        min-width: 60%;
+    }
+} */
+
+
+
+
+/* .framesubmainuser{
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    height: 620px;
+    width: 720px;
+    border-radius: 20px;
+   
+  } */
+.framesubmain1{
+    /* margin: 20px; */
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    height: 620px;
+    width: 400px;
+    border-radius: 20px;
+  }
+
+  .warna-chat:hover{
+    background-color: #e5e6e868;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #24297a;
+  }
+
+  .tableFixHead3          { 
+    overflow: auto; height: 500px; }
+
+
+
+
+    
